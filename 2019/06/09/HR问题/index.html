@@ -4,10 +4,17 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建个人博客网站Linux、Github、Hexo, 阿腾程序员のblog">
-    <meta name="description" content="搭建个人博客网站Linux、Github、Hexo搭建环境：Centos7、github、hexo、Git
-1、了解Hexo
-Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写">
+    <meta name="keywords" content="HR面试(转载于https://github.com/Leezj9671/Pentest_Interview), 阿腾程序员のblog">
+    <meta name="description" content="
+HR面
+问题
+对我们公司有什么了解，为什么选择本公司
+为什么想要应聘这个职位
+对安全服务是怎么理解的
+如果我不知道渗透测试，两分钟说一下
+如果我是一个汽车厂商，你如何证明你的工作是有意义的？
+作为应届生，你如何能胜任该职位
+你有什么职业规">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +22,7 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>搭建个人博客网站Linux、Github、Hexo | 阿腾程序员のblog</title>
+    <title>HR面试(转载于https://github.com/Leezj9671/Pentest_Interview) | 阿腾程序员のblog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -259,13 +266,13 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        搭建个人博客网站Linux、Github、Hexo
+                        HR面试(转载于https://github.com/Leezj9671/Pentest_Interview)
                     </div>
                 </div>
             </div>
@@ -376,8 +383,8 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/教程/" target="_blank">
-                                <span class="chip bg-color">教程</span>
+                            <a href="/tags/面试/" target="_blank">
+                                <span class="chip bg-color">面试</span>
                             </a>
                         
                     </div>
@@ -391,7 +398,7 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-05-27
+                    2019-06-09
                 </div>
 
                 
@@ -407,9 +414,75 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="搭建个人博客网站Linux、Github、Hexo"><a href="#搭建个人博客网站Linux、Github、Hexo" class="headerlink" title="搭建个人博客网站Linux、Github、Hexo"></a><strong>搭建个人博客网站Linux、Github、Hexo</strong></h1><p><em>搭建环境：Centos7、github、hexo、Git</em></p>
-<p></p><h4 id="1-了解Hexo">1、了解Hexo</h4><p></p>
-<p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noreferrer noopener">Hexo</a>是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的标签插件来快速的插入特定形式的内容，而且相对于其他框架，Hexo在速度上也有很大优势。</p><br><h4 id="2-搭建Node-js环境">2、搭建Node.js环境</h4><br><p>我们了解到Hexo基于Node.js的，那么我们搭建博客网站首先需要安装Node.js环境。 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。</p><br><h4>3、先下载git和npm</h4><br><p>Git是目前世界上最流行的分布式版本控制系统，是的，没有之一。使用Git可以帮助我们把本地的网页和文章等内容提交到Gihub上，实现同步。</p><br><p>npm是nodejs的包管理器,所以安装npm的时候会下载nodejs.</p><br><pre class="wp-block-code"><code>yum install git npm</code></pre><br><h4>4、下载hexo-cli</h4><br><pre class="wp-block-code"><code>npm install hexo-cli -g </code></pre><br><p>-g=-global这里不加-g会安装到当前目录的node_modules文件夹下</p><br><h4>5、<strong>下载hexo初始文件</strong></h4><br><p>相当是一个命令行应用,这里是网站的文件夹,dirname是文件夹名自己换一个有意义的名字</p><br><pre class="wp-block-code"><code>hexo init [dirname]</code></pre><br><p>下面来测试本地博客站点，在本地博客根目录下使用控制台命令：</p><br><pre class="wp-block-code"><code>hexo g  //g是generetor的缩写，生成博客<br>hexo s  //s是server的缩写，启动服务</code></pre><br><p>此时打开浏览器，输入&nbsp;<a rel="noreferrer noopener" href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，我们将会看到Hexo自带默认主题显示的博客。</p><br><h4>6、开启GitHub Pages服务</h4><br><p>搭建我们的个人博客需要一个唯一的域名，当然我们可以申请购买一个域名来使用，但是在不是太必要的情况下，我们也可以通过Github Pages获得一个免费使用的域名，这需要我们在Github上新建一个仓库，如下：</p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-66-1024x349.png" alt class="wp-image-351"><figcaption>github pages</figcaption></figure><br><p>这个过程和建立普通的仓库没什么区别，关键在于新仓库的名字，一定要是UserName+“github.io”的形式。这也是之前强调的要起一个好的用户名的原因。这样之后我们最后的博客网站的链接就会是：<a href="http://dreamcoffeezs.github.io/" target="_blank" rel="noreferrer noopener">https://UserName.github.io</a>的形式。<br>注意：固定新仓库的名字格式并非必须，只是这样操作生成的博客域名比较短小简洁，另起他名生成博客域名会很冗长。</p><br><p>点击Create Repository之后，随后选择Setting进入设置，找到Github Pages如下：</p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-67.png" alt class="wp-image-352"><br><figcaption>github pages</figcaption></figure><br><p>这里我们需要点击Choose a theme任意选择一个选择主题，然后界面会跳转到仓库，会得到如上图的一个域名，这样就可以用这个域名访问自己的博客了。</p><br><h4>7、将博客部署到github</h4><br><p>在本地执行如下命令，第一个填写自己的github账户名称，第二个填写自己注册github时的邮</p><br><pre class="wp-block-code"><code>git config –global user.name “user.name”<br>git config –global user.email “user.email”</code></pre><br><h5>生成 ssh 密匙</h5><br><pre class="wp-block-code"><code>ssh-keygen -t rsa -C user.email</code></pre><br><p>生成的密钥默认在 ~/.ssh/id_rsa.pub</p><br><p><code>cat ~/.ssh/id_rsa.pub</code>&nbsp;注意是id_rsa.pub 这个是公钥,id_rsa是私钥<br>复制pub文件内的所有字符然后到<a rel="noreferrer noopener" href="https://github.com/settings/keys" target="_blank">https://github.com/settings/keys</a>添加公钥</p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-68.png" alt class="wp-image-354"><figcaption>添加公钥</figcaption></figure><br><h4>8、同步Github,允许公共访问</h4><br><p>在本地我们已经搭建了博客，但是还只能自己本地访问。若要别人也能看到，那就需要我们将其同步部署到GitHub上了。还记得我们之前准备的Github仓库吗，这里就要用到了。<br>首先找到我们的博客仓库，并拷贝仓库地址：</p><br><div class="wp-block-image"><figure class="aligncenter"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-69.png" alt class="wp-image-355"><figcaption>github仓库地址</figcaption></figure></div><br><p>然后修改本地博客目录的配置：<br>修改本次博客根目录下的_config.yml文件，修改deploy下的配置如下：</p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-70.png" alt class="wp-image-356"><figcaption>_config.yml配置</figcaption></figure><br><p>注意：冒号后面有一个空格，需在冒号后面修改</p><br><p>最后执行控制台命令：</p><br><pre class="wp-block-code"><code>npm install hexo-deployer-git —save //安装部署插件<br><code>hexo d //部署到github</code><br></code></pre><br><p>现在，我们再次访问链接：<a rel="noreferrer noopener" href="https://dreamcoffeezs.github.io/" target="_blank">https://zthacker.github.io</a>，就会发现这里的界面和本地的一样了。如此一来我们搭建的个人博客网站就基本完成了。</p><br><h4>9、发布博客</h4><br><p>激动人心的时候到了，终于可以发布自己的第一篇博客了。来尝试一下以下的步骤：<br>在本地博客文件夹根目录输入：</p><br><pre class="wp-block-code"><br><code>hexo new “我の个人第一篇博文”</code><br><code>hexo g   //生成网页</code><br><code>hexo d  //部署到远端(github)</code><br></pre><br><p>现在打开我们的博客网站：<a href="https://zthacker.github.io/">https://zthacker.github.io</a></p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-71-1024x506.png" alt class="wp-image-357"><figcaption>blog</figcaption></figure><br><p>这就是我们发布博客的方法啦，当然这里是为了演示，真正做的时候我们要找到_posts里的博客原文，先编辑内容，然后再部署到github上。</p><br><h4>10、更换主题</h4><br><p>为了让它看起来更美观一些，我们可以为其更换主题</p><br><p>可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a>下载我们需要的主题</p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-72-1024x643.png" alt class="wp-image-358"><figcaption>themes</figcaption></figure><br><p>这些主题都是在github上可以用git下载的，所以我们在本地切换到themes目录下</p><br><figure class="wp-block-image"><img src="https://www.zhangteng.xyz/wp-content/uploads/2019/05/image-73.png" alt class="wp-image-359"></figure><br><p>然后用git clone 加上主题下载地址，这样就能下载到themes下 了，然后在改_config.yml文件，搜索theme字段，并将其值修改为刚才下的主题名字。然后</p><br><p>在控制台下输入如下命令：</p><br><pre class="wp-block-code"><br><code>hexo clean  //清理缓存</code><br><code>hexo g    //重新生成博客代码</code><br><code>hexo d   //部署到本地</code><br></pre><br><br><br><br><p>这样我们主题就生效了。</p><br><p>说明一下：在Hexo中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。所以主题上传成功后可以修改一下站点配置那就需要更改这俩配置文件。写博客时需要用markdown语法，这需要我学习使用markdown了。</p>
+                <ul>
+<li><a href="#hr面">HR面</a><ul>
+<li><a href="#问题">问题</a><ul>
+<li><a href="#对我们公司有什么了解为什么选择本公司">对我们公司有什么了解，为什么选择本公司</a></li>
+<li><a href="#为什么想要应聘这个职位">为什么想要应聘这个职位</a></li>
+<li><a href="#对安全服务是怎么理解的">对安全服务是怎么理解的</a></li>
+<li><a href="#如果我不知道渗透测试两分钟说一下">如果我不知道渗透测试，两分钟说一下</a></li>
+<li><a href="#如果我是一个汽车厂商你如何证明你的工作是有意义的">如果我是一个汽车厂商，你如何证明你的工作是有意义的？</a></li>
+<li><a href="#作为应届生你如何能胜任该职位">作为应届生，你如何能胜任该职位</a></li>
+<li><a href="#你有什么职业规划">你有什么职业规划</a></li>
+<li><a href="#如果离职的话是因为什么原因">如果离职的话是因为什么原因</a></li>
+<li><a href="#你有什么优缺点">你有什么优缺点</a></li>
+<li><a href="#对于薪资的要求">对于薪资的要求</a></li>
+<li><a href="#给不了这么多工资可以接受吗为什么想要这个数">给不了这么多工资可以接受吗？为什么想要这个数？</a></li>
+<li><a href="#进入部门后你需要多长时间进入项目">进入部门后，你需要多长时间进入项目？</a></li>
+<li><a href="#上一个面试的人能力跟你差不多但是工资方面比你要的低">上一个面试的人能力跟你差不多，但是工资方面比你要的低？</a></li>
+<li><a href="#是否可以接受加班">是否可以接受加班</a></li>
+<li><a href="#沟通能力和领导同事产生分歧会怎么办">（沟通能力）和领导、同事产生分歧会怎么办</a></li>
+<li><a href="#工作一段时间后，发现工作不是想象中的，会怎么办/对跳槽的看法">工作一段时间后，发现工作不是想象中的，会怎么办/对跳槽的看法</a></li>
+<li><a href="#对上司有什么要求喜欢和什么样的领导合作">对上司有什么要求？喜欢和什么样的领导合作？</a></li>
+<li><a href="#最有影响的一件事人">最有影响的一件事/人</a></li>
+<li><a href="#你还要问什么问题">你还要问什么问题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="HR面"><a href="#HR面" class="headerlink" title="HR面"></a>HR面</h1><p>注意！HR面试的时候会有非常多的坑，熟悉我在这里写的问题，回答的时候情商高一点，不要跟HR吵起来，也不要有不合时宜的意见分歧，这个度最好自己能让同学、朋友担任面试官，多多挑你的刺，不断练习自己的反应能力。技术面试通过的，在HR这边通不过的例子是有很多的！</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="对我们公司有什么了解，为什么选择本公司"><a href="#对我们公司有什么了解，为什么选择本公司" class="headerlink" title="对我们公司有什么了解，为什么选择本公司"></a>对我们公司有什么了解，为什么选择本公司</h3><p>在信息安全行业比较知名，了解过公司的xx产品。（每次面试某个公司，都要花5-10分钟了解该公司的产品）</p>
+<h3 id="为什么想要应聘这个职位"><a href="#为什么想要应聘这个职位" class="headerlink" title="为什么想要应聘这个职位"></a>为什么想要应聘这个职位</h3><p>从我的经历上可以很清楚地看到我对网络安全的浓厚兴趣，我认为对本职工作有兴趣的人才能更好地完成这个工作。另外也有一句话说得很棒，“你之所以看不见黑暗，是因为有人拼命把它挡在你看不到的地方”，我认为做信息安全的尤其是渗透测试，就是为了更好地保护用户的安全，防患于未然，也是我想要应聘这个岗位的理由。（不要照背，体现自己的热爱和专业能力）</p>
+<h3 id="对安全服务是怎么理解的"><a href="#对安全服务是怎么理解的" class="headerlink" title="对安全服务是怎么理解的"></a>对安全服务是怎么理解的</h3><p>安全服务对象是人， 渗透测试对象是网站。（我的理解）</p>
+<ul>
+<li>安全概念和资讯</li>
+<li>安全工具使用</li>
+<li>渗透测试</li>
+<li>安全基线检查</li>
+<li>应急响应</li>
+<li>代码审计</li>
+<li>安全边界建设</li>
+<li>安全规范 </li>
+</ul>
+<h3 id="如果我不知道渗透测试，两分钟说一下"><a href="#如果我不知道渗透测试，两分钟说一下" class="headerlink" title="如果我不知道渗透测试，两分钟说一下"></a>如果我不知道渗透测试，两分钟说一下</h3><p>（此处自行组织语言，力求能将渗透测试讲得浅显易懂，时间控制在三分钟以内）</p>
+<h3 id="如果我是一个汽车厂商，你如何证明你的工作是有意义的？"><a href="#如果我是一个汽车厂商，你如何证明你的工作是有意义的？" class="headerlink" title="如果我是一个汽车厂商，你如何证明你的工作是有意义的？"></a>如果我是一个汽车厂商，你如何证明你的工作是有意义的？</h3><p>（对于不懂得安全的人来说，怎么能说服他需要进行渗透测试，渗透测试有什么作用）</p>
+<h3 id="作为应届生，你如何能胜任该职位"><a href="#作为应届生，你如何能胜任该职位" class="headerlink" title="作为应届生，你如何能胜任该职位"></a>作为应届生，你如何能胜任该职位</h3><p>正如前方所说，我学习能力很强，主观能动性强，能很快地做好下派的任务，所以我认为我能很好地胜任这个职位</p>
+<h3 id="你有什么职业规划"><a href="#你有什么职业规划" class="headerlink" title="你有什么职业规划"></a>你有什么职业规划</h3><p>渗透测试工程师-渗透测试项目负责人-安全架构师（安全咨询顾问）</p>
+<h3 id="如果离职的话是因为什么原因"><a href="#如果离职的话是因为什么原因" class="headerlink" title="如果离职的话是因为什么原因"></a>如果离职的话是因为什么原因</h3><p>个人规划和公司有冲突，缺少上升空间。（就算是因为钱少、和同事 <del>打架</del> 不和，也不要明说……）</p>
+<h3 id="你有什么优缺点"><a href="#你有什么优缺点" class="headerlink" title="你有什么优缺点"></a>你有什么优缺点</h3><ul>
+<li>优点：对网络安全十分热爱，抗压能力强，学习能力强，责任感强</li>
+<li>缺点：遇到技术难点时可能会一直钻研，可能会耽搁到其它事情 （情商高一点，不要真的说自己的缺点）</li>
+</ul>
+<h3 id="对于薪资的要求"><a href="#对于薪资的要求" class="headerlink" title="对于薪资的要求"></a>对于薪资的要求</h3><p>月薪13-15K，可以接受1k的浮动</p>
+<h3 id="给不了这么多工资可以接受吗？为什么想要这个数？"><a href="#给不了这么多工资可以接受吗？为什么想要这个数？" class="headerlink" title="给不了这么多工资可以接受吗？为什么想要这个数？"></a>给不了这么多工资可以接受吗？为什么想要这个数？</h3><ol>
+<li>贵公司和我其实比较契合，我可以接受月薪1k左右的浮动。（表明自己的接受范围和立场）</li>
+<li>可能我某些方面表现得不够好或者表达不清晰，让您觉得我的能力不够。您可以根据这些点再问我几个问题。（表明自己对自身的判断，认为自己值得这个数，委婉提示面试官可能判断有误）</li>
+<li>通过贵司的招聘信息和整个市场平均水平看，我认为我岗位匹配度比较好，值得这个工资水平。（明确回答，要有自信）<br>（这个问题千万不要顶嘴或拍桌走人，可参考我的知乎回答 面试想拿 10K，HR 说你只值 7K，该怎样回答或者反驳？ - 李与归的回答 - 知<br><a href="https://www.zhihu.com/question/282880854/answer/432987673）" target="_blank" rel="noopener">https://www.zhihu.com/question/282880854/answer/432987673）</a></li>
+</ol>
+<h3 id="进入部门后，你需要多长时间进入项目？"><a href="#进入部门后，你需要多长时间进入项目？" class="headerlink" title="进入部门后，你需要多长时间进入项目？"></a>进入部门后，你需要多长时间进入项目？</h3><p>（表达自己的快速学习能力）</p>
+<h3 id="上一个面试的人能力跟你差不多，但是工资方面比你要的低？"><a href="#上一个面试的人能力跟你差不多，但是工资方面比你要的低？" class="headerlink" title="上一个面试的人能力跟你差不多，但是工资方面比你要的低？"></a>上一个面试的人能力跟你差不多，但是工资方面比你要的低？</h3><p>（表达综合素质方面，比如沟通能力好、领导能力好、文档能力好等等）</p>
+<h3 id="是否可以接受加班"><a href="#是否可以接受加班" class="headerlink" title="是否可以接受加班"></a>是否可以接受加班</h3><p>加班肯定是不可避免的，我可以接受项目需求的加班，毕竟完成工作是员工所要尽到的责任。同时我也会提高自己的工作效率，配合完成工作。（同样的，情商高一点，口头说要加班，入职之后要不要加班不就是……:&gt;）</p>
+<h3 id="（沟通能力）和领导、同事产生分歧会怎么办"><a href="#（沟通能力）和领导、同事产生分歧会怎么办" class="headerlink" title="（沟通能力）和领导、同事产生分歧会怎么办"></a>（沟通能力）和领导、同事产生分歧会怎么办</h3><p>出现分歧是十分正常的事情，产生分歧很有可能是双方理解不一样，如何有效沟通、相互理解才是重中之重。在我看来还是会以大局出发，以有益于公司和客户的方向出发。</p>
+<h3 id="工作一段时间后，发现工作不是想象中的，会怎么办-对跳槽的看法"><a href="#工作一段时间后，发现工作不是想象中的，会怎么办-对跳槽的看法" class="headerlink" title="工作一段时间后，发现工作不是想象中的，会怎么办/对跳槽的看法"></a>工作一段时间后，发现工作不是想象中的，会怎么办/对跳槽的看法</h3><p>我在找工作之前，都会了解好这份工作的具体职责，如果我工作一段时间后发现工作不是想象中的，那只能说明职业目标不够清晰</p>
+<h3 id="对上司有什么要求？喜欢和什么样的领导合作？"><a href="#对上司有什么要求？喜欢和什么样的领导合作？" class="headerlink" title="对上司有什么要求？喜欢和什么样的领导合作？"></a>对上司有什么要求？喜欢和什么样的领导合作？</h3><p>我来求职都是为了能找到一个希望能提升自己的平台，我希望更能找到一个技术经验丰富的领导。</p>
+<h3 id="最有影响的一件事-人"><a href="#最有影响的一件事-人" class="headerlink" title="最有影响的一件事/人"></a>最有影响的一件事/人</h3><p>（最好是在安全领域方面的）</p>
+<h3 id="你还要问什么问题"><a href="#你还要问什么问题" class="headerlink" title="你还要问什么问题"></a>你还要问什么问题</h3><ul>
+<li>个人：有没有岗位晋升机制，入职培训项目，员工培训提升项目。五险一金，社保比例，饭补、餐补、交通补助</li>
+<li>公司：岗位具体职责</li>
+<li>具体工作内容？会不会经常出差？</li>
+<li>试用期多久？薪水多少？</li>
+</ul>
 
             </div>
             <hr>
@@ -565,9 +638,9 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《搭建个人博客网站Linux、Github、Hexo》
+                    《HR面试(转载于https://github.com/Leezj9671/Pentest_Interview)》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/05/27/我の个人第一篇博文/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/06/09/HR问题/" property="cc:attributionName" rel="cc:attributionURL">
                 阿腾程序员
             </a> is licensed under a
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
@@ -610,6 +683,59 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
+                <a href="/2019/06/09/部分面试问题记录/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="面试问题记录(转载于https://github.com/Leezj9671/Pentest_Interview)">
+                        
+                        <span class="card-title">面试问题记录(转载于https://github.com/Leezj9671/Pentest_Interview)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+面试问题记录
+360
+SQL的存储引擎
+SQL注入写shell的条件，用法
+GPC是什么？开启了怎么绕过
+Mysql一个@和两个@什么区别
+IIS解析漏洞，不同版本有什么漏洞，还有什么容器解析漏洞
+wireshark抓包，数据报经过三层交
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-09
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-user fa-fw"></i>
+                            阿腾程序员
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/面试/" target="_blank">
+                        <span class="chip bg-color">面试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2019/06/09/README/">
                     <div class="card-image">
                         
@@ -628,47 +754,8 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-09
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            阿腾程序员
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/05/27/我の个人第一篇博文/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="搭建个人博客网站Linux、Github、Hexo">
-                        
-                        <span class="card-title">搭建个人博客网站Linux、Github、Hexo</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            搭建个人博客网站Linux、Github、Hexo搭建环境：Centos7、github、hexo、Git
-1、了解Hexo
-Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-09
                             </span>
                         <span class="publish-author">
                             
@@ -677,15 +764,6 @@ Hexo是高效的静态站点生成框架，它基于Node.js。 通过 Hexo 你�
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
-                    </a>
-                    
                 </div>
                 
             </div>
